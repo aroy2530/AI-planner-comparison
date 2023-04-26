@@ -1,0 +1,42 @@
+
+ff: parsing domain file
+domain 'BLOCKSWORLD' defined
+ ... done.
+ff: parsing problem file
+problem 'BW-18-1-7' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   32 into depth [1]
+                                  31            [1]
+                                  30            [1]
+                                  29            [1][2][3]
+                                  28            [1]
+                                  27            [1]
+                                  26            [1]
+                                  25            [1][2][3][4]
+                                  24            [1][2][3][4][5]
+                                  23            [1]
+                                  22            [1][2]
+                                  21            [1]
+                                  20            [1]
+                                  19            [1][2]
+                                  18            [1]
+                                  17            [1]
+                                  16            [1][2][3][4][5]
+                                  15            [1]
+                                  14            [1]
+                                  13            [1][2][3][4][5][6][7][8][9]
+                                  12            [1][2]
+                                  11            [1][2][3][4][5][6][7]
+                                  10            [1]
+                                   9            [1][2]
+                                   8            [1][2][3][4][5][6][7][8]
+                                   7            [1][2][3][4][5][6][7][8][9][10][11][12][13][14]

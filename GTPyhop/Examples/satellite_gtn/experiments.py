@@ -1,4 +1,6 @@
 import gtpyhop
+import time
+import csv
 
 # We must declare the current domain before importing methods and actions.
 # To make the code more portable, we don't hard-code the domain name, but
@@ -24,16 +26,39 @@ def main(do_pauses=True):
     # If we've changed to some other domain, this will change us back.
     print(f"Changing current domain to {the_domain}, if it isn't that already.")
     gtpyhop.current_domain = the_domain
-    size = 3
+    size_folders = ['size-20', 'size-30', 'size-40', 'size-50', 'size-60', 'size-70', 'size-80', 'size-90', 'size-91', 'size-92']
+    
+    for size in size_folders:
+        prob_num = 1
+        while prob_num <= 10:
+            state, goal = sat_pddltopy(f'satellite_gtn\\problems\\{size}\\{prob_num}') # starting in Examples dir
+            
+            # state.display('Initial state is')
+            # goal.display('Goal state is')
+            # gtpyhop.verbose = 2
 
-    initial, goal = sat_pddltopy(f'satellite_gtn\\problems\\sat-{size}.txt') # starting in Examples dir
+            start = time.time()
+
+            plan = gtpyhop.find_plan(state,[goal])
+            
+            end = time.time()
+            cpu_time = end - start
+
+            if isinstance(plan, bool):
+                plan_len = 0
+            else:
+                plan_len = len(plan)
+            print("Plan Length", plan_len, "CPU Time", cpu_time)
+
+            with open("results.csv", "a", encoding="UTF8", newline="") as f:
+                writer = csv.writer(f)
+                writer.writerow([size, prob_num, plan_len, cpu_time])
+
+            prob_num += 1
 
     # initial.display('Initial state is')
     # goal.display('Goal state is')
     # gtpyhop.verbose = 2
-
-    plan = gtpyhop.find_plan(initial,[goal])
-    print(len(plan))
 
 def sat_pddltopy(problem_file):
     # read in the file

@@ -1,0 +1,60 @@
+
+ff: parsing domain file
+domain 'SATELLITE' defined
+ ... done.
+ff: parsing problem file
+problem 'STRIPS-SAT-X-1' defined
+ ... done.
+
+
+
+no optimization required. skipping criterion.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   13 into depth [1]
+                                  12            [1]
+                                  11            [1]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: TURN_TO SATELLITE0 GROUNDSTATION34 STAR37
+        1: SWITCH_ON INSTRUMENT0 SATELLITE0
+        2: CALIBRATE SATELLITE0 INSTRUMENT0 GROUNDSTATION34
+        3: TURN_TO SATELLITE0 STAR70 GROUNDSTATION34
+        4: TURN_TO SATELLITE1 STAR40 STAR49
+        5: TURN_TO SATELLITE2 STAR40 GROUNDSTATION44
+        6: TURN_TO SATELLITE3 STAR17 STAR19
+        7: TURN_TO SATELLITE6 STAR15 STAR67
+        8: TURN_TO SATELLITE7 STAR39 GROUNDSTATION18
+        9: TAKE_IMAGE SATELLITE0 STAR70 INSTRUMENT0 INFRARED2
+       10: TURN_TO SATELLITE0 STAR71 STAR70
+       11: TAKE_IMAGE SATELLITE0 STAR71 INSTRUMENT0 THERMOGRAPH4
+       12: TURN_TO SATELLITE0 GROUNDSTATION23 STAR71
+     
+
+time spent:    0.02 seconds instantiating 60769 easy, 0 hard action templates
+               0.01 seconds reachability analysis, yielding 1216 facts and 52229 actions
+               1.13 seconds creating final representation with 1216 relevant facts, 22 relevant fluents
+               0.29 seconds computing LNF
+               1.11 seconds building connectivity graph
+               0.81 seconds searching, evaluating 30 states, to a max depth of 1
+               3.37 seconds total time
+

@@ -1,0 +1,110 @@
+
+ff: parsing domain file
+domain 'BLOCKSWORLD' defined
+ ... done.
+ff: parsing problem file
+problem 'BW-17-1-6' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is EHC, if that fails then  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+Cueing down from goal distance:   28 into depth [1][2][3]
+                                  27            [1]
+                                  26            [1][2][3]
+                                  25            [1][2][3][4]
+                                  24            [1][2]
+                                  23            [1][2][3][4]
+                                  22            [1]
+                                  21            [1]
+                                  20            [1]
+                                  19            [1][2][3][4]
+                                  18            [1]
+                                  17            [1]
+                                  16            [1]
+                                  15            [1]
+                                  14            [1]
+                                  13            [1]
+                                  12            [1][2][3]
+                                  11            [1]
+                                  10            [1]
+                                   9            [1]
+                                   8            [1][2][3]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1][2][3][4][5][6][7]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: UNSTACK B11 B12
+        1: STACK B11 B15
+        2: UNSTACK B12 B9
+        3: PUT-DOWN B12
+        4: UNSTACK B7 B5
+        5: STACK B7 B13
+        6: UNSTACK B11 B15
+        7: STACK B11 B5
+        8: UNSTACK B9 B4
+        9: STACK B9 B15
+       10: UNSTACK B4 B17
+       11: STACK B4 B9
+       12: UNSTACK B7 B13
+       13: STACK B7 B4
+       14: UNSTACK B17 B10
+       15: STACK B17 B13
+       16: UNSTACK B10 B14
+       17: STACK B10 B12
+       18: UNSTACK B14 B8
+       19: PUT-DOWN B14
+       20: UNSTACK B11 B5
+       21: STACK B11 B14
+       22: UNSTACK B5 B6
+       23: STACK B5 B8
+       24: UNSTACK B11 B14
+       25: STACK B11 B5
+       26: UNSTACK B6 B2
+       27: STACK B6 B14
+       28: UNSTACK B2 B3
+       29: PUT-DOWN B2
+       30: UNSTACK B3 B1
+       31: STACK B3 B17
+       32: UNSTACK B1 B16
+       33: PUT-DOWN B1
+       34: PICK-UP B16
+       35: STACK B16 B11
+       36: UNSTACK B3 B17
+       37: STACK B3 B10
+       38: UNSTACK B17 B13
+       39: STACK B17 B16
+       40: UNSTACK B3 B10
+       41: STACK B3 B13
+       42: UNSTACK B7 B4
+       43: STACK B7 B17
+       44: UNSTACK B4 B9
+       45: STACK B4 B10
+       46: UNSTACK B9 B15
+       47: STACK B9 B3
+       48: UNSTACK B4 B10
+       49: STACK B4 B9
+       50: UNSTACK B7 B17
+       51: STACK B7 B4
+     
+
+time spent:    0.00 seconds instantiating 612 easy, 0 hard action templates
+               0.00 seconds reachability analysis, yielding 341 facts and 612 actions
+               0.00 seconds creating final representation with 341 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.14 seconds searching, evaluating 1216 states, to a max depth of 7
+               0.14 seconds total time
+

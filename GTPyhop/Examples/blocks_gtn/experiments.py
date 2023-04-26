@@ -28,9 +28,7 @@ def main(do_pauses=True):
     print(f"Changing current domain to {the_domain}, if it isn't that already.")
     gtpyhop.current_domain = the_domain
 
-
-    # 'size-7', 
-    size_folders = ['size-9', 'size-11', 'size-12', 'size-13', 'size-14', 'size-15', 'size-16', 'size-17', 'size-18']
+    size_folders = ['size-7', 'size-9', 'size-11', 'size-12', 'size-13', 'size-14', 'size-15', 'size-16', 'size-17', 'size-18']
 
     for size in size_folders:
         prob_num = 1

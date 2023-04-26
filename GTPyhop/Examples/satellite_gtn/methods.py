@@ -55,6 +55,7 @@ def m_img_move(state, mgoal):
     # two situations: satellite is not pointing in the right direction
         # OR an image has not been taken
 
+    # example goals
     # goal.have_image = {'(Star3, thermograph4)': True, '(Planet4, thermograph2)': True}
     # goal.pointing = {'Satellite8': 'GS2', 'Satellite9': 'GS2'}
 
