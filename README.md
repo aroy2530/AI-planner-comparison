@@ -13,9 +13,9 @@ and the design and results of my comparative analyses.
 
 Navigate to [GTPyhop>Examples](GTPyhop/Examples) to see the HTN methods, experiments, randomly generated problems by size, and results for each domain. 
 
-The [Metric_FF_and_Satellite_problems](Metric_FF_and_Satellite_problems.ipynb) notebook includes Metric-FF related work and experiments, and the generation of Satellite 
+The [Metric_FF_and_Satellite_problems notebook](Metric_FF_and_Satellite_problems.ipynb) includes Metric-FF related work and experiments, and the generation of Satellite 
 problems.
 
 The [satellite-generator folder](satellite-generator) includes the code provided to me to generate Satellite problems.
 
-Metric-FF results includes the results of running Metric-FF on each domain.
+The [Metric-FF results folder](Metric-FF%20results) includes the results of running Metric-FF on each domain.
